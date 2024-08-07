@@ -1,8 +1,10 @@
 ## Disclaimer: research content
 
-The repository contains 256GB of data compressed into a 254MB zip file. The main contents of the file are 16 identical zip files in the third to last layer, of which each contains 16 zip files for a total of 64 zip files in the second to last layer, of which each contains 16 zip files for a total of 256 zip files in the last layer, of which each contains a single text file full of letters "a" which is 1GB in size for a total 256GB of text files in the third layer. The main contents are enclosed in additional 50 layers of archives. Fully unpacking the file would result in using up 256GB of disk space and could take a very long time.
+The repository contains 256GB of data compressed into a 254MB zip file (256GB_53layers.zip). The main contents of the file are 16 identical zip files in the third to last layer, of which each contains 16 zip files for a total of 64 zip files in the second to last layer, of which each contains 16 zip files for a total of 256 zip files in the last layer, of which each contains a single text file full of letters "a" which is 1GB in size for a total 256GB of text files in the third layer. The main contents are enclosed in additional 50 layers of archives. Fully unpacking the file would result in using up 256GB of disk space and could take a very long time.
 
-The file is meant only for research on detection of malicious archives.
+The second file (256GB_104layers) is identical except that it has 101 additional layers of archives instead of 50, and is more compressed so it masses 525KB.
+
+The files are meant only for research on detection of malicious archives.
 
 ## In compliance with terms of service
 
