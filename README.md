@@ -1,8 +1,10 @@
 ## Disclaimer: research content
 
-The repository contains 256GB of data compressed into a 254MB zip file (256GB_53layers.zip). The main contents of the file are 16 identical zip files in the third to last layer, of which each contains 16 zip files for a total of 64 zip files in the second to last layer, of which each contains 16 zip files for a total of 256 zip files in the last layer, of which each contains a single text file full of letters "a" which is 1GB in size for a total 256GB of text files in the third layer. The main contents are enclosed in additional 50 layers of archives. Fully unpacking the file would result in using up 256GB of disk space and could take a very long time.
+The repository contains 256GB of data compressed into a 308MB tar file (256GB.tar). The file contains 2 smaller tar archives (128GB1.tar and 128GB2.tar), of which each contains 2 smaller tar archives (64GB1.tar and 64GB2.tar) of which each contains 2 smaller tar archives, this continues down till hitting 1GB, where the contained archives are of .tar.gz type, and contain compressed 1GB text files full of letters "a", for a total of 256 1-gigabyte text files in it's final layer.
 
-The second file (256GB_104layers) is identical except that it has 101 additional layers of archives instead of 50, and is more compressed so it masses 525KB.
+256GB_109layers.tar contains this file under 100 additional layers of .tar archives. 256GB_509layers additionally compresses that file once more to shrink it down to 6.92MB and contains it under 500 more layers of .tar archives.
+
+Fully unpacking either of the files would result in using up 256GB of space, and could take a really long time!
 
 The files are meant only for research on detection of malicious archives.
 
